@@ -2,10 +2,11 @@ define([
     'angular',
     'app',
     'jquery',
-    './controller/testController'
+    './controller/testController',
+    './route/router'
 ], function(angular) {
     console.log('bootstrap.js');
     angular.element(document).ready(function() {
-        angular.bootstrap(document, ['myProject']);
+        angular.bootstrap(document, ['webapp']);
     });
 });

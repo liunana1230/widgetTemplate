@@ -1,9 +1,10 @@
 var vendorPath = '/scripts/vendor/';
 require.config({
-    baseUrl: '../scripts/',
+    baseUrl: '/scripts/',
     paths: {
         'app': 'app',
         'angular': vendorPath + 'angular/angular',
+        'angular-route': vendorPath + 'angular-route/angular-route',
         'jquery': vendorPath + 'jquery-3.2.1/jquery'
     },
     shim: {
