@@ -1,0 +1,7 @@
+.left {
+    position:relative;
+    width:200px;
+    background:white;
+    float:left;
+    height:100%;
+}
