@@ -4,18 +4,21 @@ require.config({
     paths: {
         'app': 'app',
         'angular': vendorPath + 'angular/angular',
-        'angular-route': vendorPath + 'angular-route/angular-route',
-        'jquery': vendorPath + 'jquery-3.2.1/jquery'
+        'angularUiRouter': vendorPath + 'angular-ui-router/angular-ui-router',
+        'jquery': vendorPath + 'jquery-3.2.1/jquery',
+        'routes': '/scripts/route/router'
     },
     shim: {
         'angular': {
             exports: 'angular'
+        },
+        'angularUiRouter': {
+            deps: ['angular'],
+            exports: 'angularUiRouter'
         }
     }
 });
 
-require([
-            './bootstrap'
-        ], function(bootstrap) {
+require(['./bootstrap'], function(bootstrap) {
             console.log('config.js');
         });
