@@ -1,7 +1,8 @@
 .left {
     position:relative;
-    width:200px;
-    background:white;
-    float:left;
     height:100%;
+    min-height:200px;
+    width:100%;
+    min-width:200px;
+    background:#49a094;
 }

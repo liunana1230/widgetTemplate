@@ -7,12 +7,19 @@
         <script data-main="/scripts/config" src="/scripts/vendor/requirejs-2.1.11/require.js"></script>
     </head>
     <body>
-        <div class="left" ng-include="'/particles/left.html'"></div>
-        <div class="header" ng-include="'/particles/header.html'"></div>
-        <div ng-controller="testController">
-            {{app}}
+        <div class="grid">
+            <div class="grid-body">
+                <div class="grid-left" ng-include="'/partials/left.html'"></div>
+                <div class="grid-right">
+                    <div class="grid-header" ng-include="'/partials/header.html'"></div>
+                    <!--div ng-controller="testController">
+                        {{app}}
+                    </div-->
+                    <article class="grid-content" ng-view></article>
+                </div>
+            </div>
+            <div class="grid-footer" ng-include="'/partials/footer.html'"></div>
+            <!--div footer></div-->
         </div>
-        <article class="content" ng-view></article>
-        <div class="footer" ng-include="'/particles/footer.html'"></div>
     </body>
 </html>

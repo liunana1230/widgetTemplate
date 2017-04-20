@@ -19,6 +19,9 @@ require.config({
     }
 });
 
-require(['./bootstrap'], function(bootstrap) {
+require([
+            './bootstrap'
+        ], function(bootstrap) {
+            //require(['/scripts/directive/footer_directive']);
             console.log('config.js');
         });
