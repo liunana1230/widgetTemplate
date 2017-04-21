@@ -2,6 +2,7 @@ define([
     'angular',
     'app',
     'jquery',
+    './route/router',
     './controller/testController'
 ], function(angular) {
     console.log('bootstrap.js');

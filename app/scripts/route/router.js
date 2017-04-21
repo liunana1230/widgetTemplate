@@ -9,7 +9,7 @@ define(['angular', 'require', 'angularUiRouter'], function(angular, require, ang
             $stateProvider
                 .state('module1', {
                     url: '/module1',
-                    templateUrl: 'particles/module1.html',
+                    templateUrl: 'partials/module1.html',
                     controller: 'module1Controller',
                     resolve: {
                         keyName: function ($q) {
