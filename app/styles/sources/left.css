@@ -6,3 +6,21 @@
     min-width:200px;
     background:#49a094;
 }
+
+.left #menu {
+    position:relative;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+.left #menu li {
+    height:50px;
+    line-height:50px;
+    color:white;
+    cursor:pointer;
+}
+
+.left #menu li:hover {
+    background:#61d2c2;
+}
