@@ -2,6 +2,14 @@ define(['angular', 'require', 'angularUiRouter'], function(angular, require, ang
     console.log('router-----.js');
     var app = angular.module('webapp', ['ui.router']);
     
+    app.controller('leftController', function($scope) {
+        $scope.list = [
+           {name:'module1'},
+           {name:'module2'},
+           {name:'module3'}
+        ];
+    });
+    
     app.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
         function($stateProvider, $urlRouterProvider, $controllerProvider) {
             console.log('router.js');
