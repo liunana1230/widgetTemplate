@@ -1,7 +1,7 @@
-define(['angular', 'require', 'angularUiRouter'], function(angular, require, angularUiRouter) {
+define(['angular', 'require', 'angularUiRouter', '../controller/leftController'], function(angular, require, angularUiRouter) {
     console.log('router-----.js');
     var app = angular.module('webapp', ['ui.router']);
-    
+    /*
     app.controller('leftController', function($scope) {
         $scope.list = [
            {name:'module1'},
@@ -9,6 +9,8 @@ define(['angular', 'require', 'angularUiRouter'], function(angular, require, ang
            {name:'module3'}
         ];
     });
+    */
+    app.controller('leftController', LeftController);
     
     app.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
         function($stateProvider, $urlRouterProvider, $controllerProvider) {

@@ -1,5 +1,5 @@
-<aside class="left" ng-controller="leftController">
+<aside class="left" ng-controller="leftController as data">
     <ul id="menu">
-        <li ng-repeat="item in list">{{item.name}}</li>
+        <li ng-repeat="item in data.list">{{item.name}}</li>
     </ul>
 <aside>
