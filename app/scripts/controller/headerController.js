@@ -1,4 +1,4 @@
-function HeaderController() {
+function HeaderController(factory) {
     this.searchValue = "";
 }
 

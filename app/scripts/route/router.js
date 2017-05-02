@@ -1,6 +1,14 @@
 define(['angular', 'require', 'angularUiRouter', '../controller/leftController', '../controller/headerController'], function(angular, require, angularUiRouter) {
     console.log('router-----.js');
     var app = angular.module('webapp', ['ui.router']);
+    
+    app.factory('myFactory', function() {
+        var factory = {
+            searchValue:''
+        };
+        return factory;
+    });
+    
     /*
     app.controller('leftController', function($scope) {
         $scope.list = [
@@ -10,8 +18,8 @@ define(['angular', 'require', 'angularUiRouter', '../controller/leftController',
         ];
     });
     */
-    app.controller('leftController', LeftController);
-    app.controller('headerController', HeaderController);
+    app.controller('leftController', LeftController(myFactory));
+    app.controller('headerController', HeaderController(myFactory));
     
     app.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
         function($stateProvider, $urlRouterProvider, $controllerProvider) {

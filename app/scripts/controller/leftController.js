@@ -1,4 +1,4 @@
-function LeftController() {
+function LeftController(factory) {
     this.list = [
        {name:'module1'},
        {name:'module2'}
