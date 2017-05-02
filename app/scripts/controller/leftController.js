@@ -1,12 +1,16 @@
 function LeftController() {
     this.list = [
-       {name:'module1'},
-       {name:'module2'}
+       {name:'module1', path:'/#/module1'},
+       {name:'module2', path:'/#/module2'},
+       {name:'module3', path:'/#/module3'}
     ];
+    this.selected = 'module1';
 }
 
 LeftController.prototype = {
-    
+    changeModule: function(module) {
+        this.selected = module;
+    }
 };
 
 /*

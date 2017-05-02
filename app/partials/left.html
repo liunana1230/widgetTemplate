@@ -1,5 +1,8 @@
-<aside class="left" ng-controller="leftController as data">
-    <ul id="menu">
-        <li ng-repeat="item in data.list">{{item.name}}</li>
+<aside class="left" ng-controller="leftController as control">
+    <div class="logo">
+    
+    </div>
+    <ul id="menu" ng-repeat="item in control.list">
+        <li ng-click="control.changeModule(item.name)" ng-class="{selected:control.selected==item.name}"><a href={{item.path}}>{{item.name}}</a></li>
     </ul>
 <aside>

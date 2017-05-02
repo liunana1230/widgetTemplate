@@ -15,7 +15,7 @@ define(['angular', 'require', 'angularUiRouter', '../controller/leftController']
     app.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
         function($stateProvider, $urlRouterProvider, $controllerProvider) {
             console.log('router.js');
-            $urlRouterProvider.otherwise('/module2');
+            $urlRouterProvider.otherwise('/module1');
             $stateProvider
                 .state('module1', {
                     url: '/module1',
