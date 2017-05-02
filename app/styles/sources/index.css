@@ -36,4 +36,12 @@
     display:flex;
     flex:1;
     background:#efefef;
+    padding:20px;
+}
+
+.module {
+    background:white;
+    width:100%;
+    min-height:100%;
+    overflow:hidden;
 }
