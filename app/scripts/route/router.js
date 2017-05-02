@@ -47,6 +47,7 @@ define(['angular', 'require', 'angularUiRouter', '../controller/leftController']
                         }
                     }
                 })
+
         }
     ]);
     

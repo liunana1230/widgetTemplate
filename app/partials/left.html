@@ -3,6 +3,6 @@
     
     </div>
     <ul id="menu" ng-repeat="item in control.list">
-        <li ng-click="control.changeModule(item.name)" ng-class="{selected:control.selected==item.name}"><a href={{item.path}}>{{item.name}}</a></li>
+        <li ng-click="control.changeModule(item.name)" ng-class="{selected:control.selected==item.name}"><a ui-sref={{item.name}}>{{item.name}}</a></li>
     </ul>
 <aside>

@@ -1,8 +1,7 @@
 function LeftController() {
     this.list = [
-       {name:'module1', path:'/#/module1'},
-       {name:'module2', path:'/#/module2'},
-       {name:'module3', path:'/#/module3'}
+       {name:'module1'},
+       {name:'module2'}
     ];
     this.selected = 'module1';
 }
