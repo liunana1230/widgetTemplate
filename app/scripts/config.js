@@ -6,7 +6,8 @@ require.config({
         'angular': vendorPath + 'angular/angular',
         'angularUiRouter': vendorPath + 'angular-ui-router/angular-ui-router',
         'jquery': vendorPath + 'jquery-3.2.1/jquery',
-        'routes': '/scripts/route/router'
+        'routes': '/scripts/route/router',
+        'bootstrap': './bootstrap'
     },
     shim: {
         'angular': {
@@ -20,8 +21,7 @@ require.config({
 });
 
 require([
-            './bootstrap'
+            'bootstrap'
         ], function(bootstrap) {
-            //require(['/scripts/directive/footer_directive']);
             console.log('config.js');
         });

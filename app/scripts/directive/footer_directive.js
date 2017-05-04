@@ -1,11 +1,10 @@
-//define(['angular'], function(angular) {
-    /*angular.module("webapp").directive("footer", function() {
+define(['angular'], function(angular) {
+    return function() {
       return {
         restrict: 'A',
         templateUrl: '/partials/footer.html',
-        scope: true,
-        transclude : false,
-        controller: 'FooterController'
+        controller: 'footerController',
+        replace: true
       };
-    });*/
-//});
+    }
+});

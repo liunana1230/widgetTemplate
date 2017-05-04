@@ -1,4 +1,4 @@
-define(['angular', 'require', 'angularUiRouter', '../controller/leftController',/* '../controller/headerController'*/], function(angular, require, angularUiRouter) {
+define(['angular', 'require', 'angularUiRouter', '../directive/footer_directive', '../controller/footer_controller', '../controller/leftController', /* '../controller/headerController'*/], function(angular, require, angularUiRouter, footerDirective, footerController) {
     console.log('router-----.js');
     var app = angular.module('webapp', ['ui.router']);
     
@@ -12,6 +12,20 @@ define(['angular', 'require', 'angularUiRouter', '../controller/leftController',
         return myFactory;
     }]);
     
+    app.directive('footer', footerDirective);
+    /*
+    app.directive('footer', function() {
+      return {
+        restrict: 'A',
+        templateUrl: '/partials/footer.html',
+        controller: 'footerController',
+        replace: true
+      };
+    }); */
+
+    app.controller('footerController', footerController);
+    
+    //use scope
     /*
     app.controller('leftController', function($scope) {
         $scope.list = [
@@ -38,7 +52,7 @@ define(['angular', 'require', 'angularUiRouter', '../controller/leftController',
         }
     });
     
-    
+    //use prototype
     app.controller('leftController', LeftController);
     //app.controller('headerController', HeaderController);
     
