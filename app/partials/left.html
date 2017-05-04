@@ -1,3 +1,12 @@
+<!--aside class="left" ng-controller="leftController">
+    <div class="logo">
+    
+    </div>
+    <ul id="menu" ng-repeat="item in list">
+        <li ng-click="changeModule(item.name)" ng-class="{selected:selected==item.name}"><a ui-sref={{item.name}}>{{item.name}}</a></li>
+    </ul>
+<aside-->
+
 <aside class="left" ng-controller="leftController as control">
     <div class="logo">
     
