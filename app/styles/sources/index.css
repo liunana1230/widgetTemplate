@@ -1,0 +1,47 @@
+.grid {
+    -webkit-flex;
+    display:flex;
+    min-height:100vh;
+    flex-direction:column;
+}
+
+.grid-body {
+    display: -webkit-flex;
+    display:flex;
+    flex:1;
+    flex-direction:row;
+}
+
+.grid-left {
+    width:200px;
+}
+
+.grid-right {
+    display:-webkit-flex;
+    display:flex;
+    flex:1;
+    flex-direction:column;
+}
+
+.grid-header {
+    height:80px;
+}
+
+.grid-footer {
+    height:50px;
+}
+
+.grid-content {
+    display:-webkit-flex;
+    display:flex;
+    flex:1;
+    background:#efefef;
+    padding:20px;
+}
+
+.module {
+    background:white;
+    width:100%;
+    min-height:100%;
+    overflow:hidden;
+}
