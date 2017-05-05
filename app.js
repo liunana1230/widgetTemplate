@@ -7,13 +7,13 @@ var ejs = require('ejs');
 
 var app = express();
 
-app.set('views', path.join(__dirname, 'app/views'));
+app.set('views', path.join(__dirname, 'static/views'));
 app.engine('.html', ejs.__express);
 app.set('view engine', 'html');
 
-app.use(favicon(path.join(__dirname, '/app/images', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, '/static/images', 'favicon.ico')));
 
-app.use('/widgetTemplate/static', express.static('./app'));
+app.use('/widgetTemplate/static', express.static('./static'));
 
 app.use('/', routes);
 app.use('/data_service', data_service);
