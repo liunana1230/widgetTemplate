@@ -63,12 +63,12 @@ define(['angular', 'require', 'angularUiRouter', '../directive/footer_directive'
             $stateProvider
                 .state('module1', {
                     url: '/module1',
-                    templateUrl: '/widgetTemplate/static/partials/module1.html',
+                    templateUrl: '/partials/module1.html',
                     controller: 'module1Controller',
                     resolve: {
                         keyName: function ($q) {
                             var deferred = $q.defer();
-                            require(['/widgetTemplate/static/scripts/controller/module1Controller.js'], function(controller) {
+                            require(['/scripts/controller/module1Controller.js'], function(controller) {
                                 $controllerProvider.register('module1Controller', controller);
                                 deferred.resolve();
                             });
@@ -78,12 +78,12 @@ define(['angular', 'require', 'angularUiRouter', '../directive/footer_directive'
                 })
                 .state('module2', {
                     url: '/module2',
-                    templateUrl: '/widgetTemplate/static/partials/module2.html',
+                    templateUrl: '/partials/module2.html',
                     controller: 'module2Controller',
                     resolve: {
                         keyName: function ($q) {
                             var deferred = $q.defer();
-                            require(['/widgetTemplate/static/scripts/controller/module2Controller.js'], function(controller) {
+                            require(['/scripts/controller/module2Controller.js'], function(controller) {
                                 $controllerProvider.register('module2Controller', controller);
                                 deferred.resolve();
                             });

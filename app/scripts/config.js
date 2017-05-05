@@ -1,12 +1,12 @@
-var vendorPath = '/widgetTemplate/static/scripts/vendor/';
+var vendorPath = '/scripts/vendor/';
 require.config({
-    baseUrl: '/widgetTemplate/static/scripts/',
+    baseUrl: '/scripts/',
     paths: {
         'app': 'app',
         'angular': vendorPath + 'angular/angular',
         'angularUiRouter': vendorPath + 'angular-ui-router/angular-ui-router',
         'jquery': vendorPath + 'jquery-3.2.1/jquery',
-        'routes': '/widgetTemplate/static/scripts/route/router',
+        'routes': '/scripts/route/router',
         'bootstrap': './bootstrap'
     },
     shim: {
