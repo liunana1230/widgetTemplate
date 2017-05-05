@@ -13,7 +13,7 @@ app.set('view engine', 'html');
 
 app.use(favicon(path.join(__dirname, '/app/images', 'favicon.ico')));
 
-app.use('/widgetTemplate', express.static('./app'));
+app.use('/widgetTemplate/static', express.static('./app'));
 
 app.use('/', routes);
 app.use('/data_service', data_service);
