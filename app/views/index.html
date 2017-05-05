@@ -3,19 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>gulp+requirejs+angularjs</title>
-        <link type="text/css" rel="stylesheet" href="/styles/target/all.css"></link>
-        <script data-main="/scripts/config" src="/scripts/vendor/requirejs-2.1.11/require.js"></script>
+        <link type="text/css" rel="stylesheet" href="/widgetTemplate/styles/target/all.css"></link>
+        <script data-main="/widgetTemplate/scripts/config" src="/widgetTemplate/scripts/vendor/requirejs-2.1.11/require.js"></script>
     </head>
     <body>
         <div class="grid">
             <div class="grid-body">
-                <div class="grid-left" ng-include="'/partials/left.html'"></div>
+                <div class="grid-left" ng-include="'/widgetTemplate/partials/left.html'"></div>
                 <div class="grid-right">
-                    <div class="grid-header" ng-include="'/partials/header.html'"></div>
+                    <div class="grid-header" ng-include="'/widgetTemplate/partials/header.html'"></div>
                     <article class="grid-content" ui-view></article>
                 </div>
             </div>
-            <!--div class="grid-footer" ng-include="'/partials/footer.html'"></div-->
+            <!--div class="grid-footer" ng-include="'/widgetTemplate/partials/footer.html'"></div-->
             <div footer></div>
         </div>
     </body>
