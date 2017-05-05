@@ -52,4 +52,7 @@ var server = app.listen(8081, function() {
     
     console.log('Example app listening at http://%s:%s', host, port);
 });
+
+server.timeout = 600000;
+
 module.exports = app;
