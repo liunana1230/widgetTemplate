@@ -1,0 +1,16 @@
+.header {
+    height:100%;
+    background:white;
+}
+
+.header .search {
+    position:absolute;
+    right:20px;
+    width:200px;
+    height:30px;
+    border-radius:20px;
+    top:25px;
+    outline:none;
+    border:1px solid #bababa;
+    text-indent:10px;
+}
