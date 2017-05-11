@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var routes = require('./routes/index');
 var data_service = require('./routes/data_service');
 var ejs = require('ejs');
-
+var timeout = require('connect-timeout');
 var app = express();
 
 app.set('views', path.join(__dirname, 'app/views'));
@@ -13,7 +13,7 @@ app.set('view engine', 'html');
 
 app.use(favicon(path.join(__dirname, '/app/images', 'favicon.ico')));
 
-app.use(express.timeout(10000));
+app.use(timeout(10000));
 app.use('/scripts', express.static('./app/scripts'));
 app.use('/images', express.static('./app/images'));
 app.use('/styles', express.static('./app/styles'));
