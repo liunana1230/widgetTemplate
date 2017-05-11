@@ -1,6 +1,7 @@
 var vendorPath = '/scripts/vendor/';
 require.config({
     baseUrl: '/scripts/',
+    waitSeconds: 10000,
     paths: {
         'app': 'app',
         'angular': vendorPath + 'angular/angular',
