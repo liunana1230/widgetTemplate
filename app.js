@@ -13,6 +13,7 @@ app.set('view engine', 'html');
 
 app.use(favicon(path.join(__dirname, '/app/images', 'favicon.ico')));
 
+app.use(express.timeout(10000));
 app.use('/scripts', express.static('./app/scripts'));
 app.use('/images', express.static('./app/images'));
 app.use('/styles', express.static('./app/styles'));
@@ -53,6 +54,6 @@ var server = app.listen(8081, function() {
     console.log('Example app listening at http://%s:%s', host, port);
 });
 
-server.timeout = 600000;
+server.timeout = 10000;
 
 module.exports = app;
